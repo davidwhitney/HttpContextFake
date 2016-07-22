@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C556E9FB-7E95-4DDA-8A28-B90F104D9B61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E4427B4E-E590-4C99-8CE2-F09306AB5A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpContextFake.Tests", "tests\HttpContextFake.Tests\HttpContextFake.Tests.csproj", "{EE5EA96E-769D-4C6F-B36D-7FD09D2DBA6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpContextFake", "src\HttpContextFake\HttpContextFake.csproj", "{2808C785-E700-45EE-B2BF-E8C54FC3E6DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE5EA96E-769D-4C6F-B36D-7FD09D2DBA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5EA96E-769D-4C6F-B36D-7FD09D2DBA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5EA96E-769D-4C6F-B36D-7FD09D2DBA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5EA96E-769D-4C6F-B36D-7FD09D2DBA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2808C785-E700-45EE-B2BF-E8C54FC3E6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2808C785-E700-45EE-B2BF-E8C54FC3E6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2808C785-E700-45EE-B2BF-E8C54FC3E6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2808C785-E700-45EE-B2BF-E8C54FC3E6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE5EA96E-769D-4C6F-B36D-7FD09D2DBA6F} = {E4427B4E-E590-4C99-8CE2-F09306AB5A86}
+		{2808C785-E700-45EE-B2BF-E8C54FC3E6DB} = {C556E9FB-7E95-4DDA-8A28-B90F104D9B61}
+	EndGlobalSection
+EndGlobal
