@@ -17,14 +17,14 @@ namespace HttpContextFake.Tests
         [Test]
         public void CanSetUrl()
         {
-            _sut.TheUrl = new Uri("http://www.google.com");
-            Assert.That(_sut.Url, Is.EqualTo(_sut.TheUrl));
+            _sut.FakeUrl = new Uri("http://www.google.com");
+            Assert.That(_sut.Url, Is.EqualTo(_sut.FakeUrl));
         }
 
         [Test]
-        public void CanSetHeaders()
+        public void CanSeFakeaders()
         {
-            _sut.TheHeaders.Add("header", "value");
+            _sut.FakeHeaders.Add("header", "value");
             Assert.That(_sut.Headers["header"], Is.EqualTo("value"));
         }
     }

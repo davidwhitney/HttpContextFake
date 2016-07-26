@@ -9,26 +9,26 @@ namespace HttpContextFake
 {
     public class HttpContext : HttpContextBase
     {
-        public HttpRequest TheRequest { get; set; } = new HttpRequest();
-        public override HttpRequestBase Request => TheRequest;
+        public HttpRequest FakeRequest { get; set; } = new HttpRequest();
+        public override HttpRequestBase Request => FakeRequest;
 
-        public HttpResponse TheResponse { get; set; } = new HttpResponse();
-        public override HttpResponseBase Response => TheResponse;
+        public HttpResponse FakeResponse { get; set; } = new HttpResponse();
+        public override HttpResponseBase Response => FakeResponse;
 
-        public Exception TheError { get; set; }
-        public override Exception Error => TheError;
+        public Exception FakeError { get; set; }
+        public override Exception Error => FakeError;
 
-        public Dictionary<string, string> TheItems { get; set; } = new Dictionary<string,string>();
-        public override IDictionary Items => TheItems;
+        public Dictionary<string, string> FakeItems { get; set; } = new Dictionary<string,string>();
+        public override IDictionary Items => FakeItems;
 
-        public Cache TheCache { get; set; } = new Cache();
-        public override Cache Cache => TheCache;
+        public Cache FakeCache { get; set; } = new Cache();
+        public override Cache Cache => FakeCache;
 
-        public HttpServerUtility TheServer { get; set; } = new HttpServerUtility();
-        public override HttpServerUtilityBase Server => TheServer;
+        public HttpServerUtility FakeServer { get; set; } = new HttpServerUtility();
+        public override HttpServerUtilityBase Server => FakeServer;
 
-        public HttpSessionState TheSession { get; set; } = new HttpSessionState();
-        public override HttpSessionStateBase Session => TheSession;
+        public HttpSessionState FakeSession { get; set; } = new HttpSessionState();
+        public override HttpSessionStateBase Session => FakeSession;
         
         public override IPrincipal User { get; set; }
     }

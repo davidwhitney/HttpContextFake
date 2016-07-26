@@ -7,17 +7,17 @@ namespace HttpContextFake
 {
     public class HttpRequest : HttpRequestBase
     {
-        public Uri TheUrl { get; set; }
-        public override Uri Url => TheUrl;
+        public Uri FakeUrl { get; set; }
+        public override Uri Url => FakeUrl;
 
-        public Dictionary<string, string> TheHeaders { get; set; } = new Dictionary<string, string>();
+        public Dictionary<string, string> FakeHeaders { get; set; } = new Dictionary<string, string>();
 
         public override NameValueCollection Headers
         {
             get
             {
                 var nvc = new NameValueCollection();
-                foreach (var h in TheHeaders)
+                foreach (var h in FakeHeaders)
                 {
                     nvc.Add(h.Key, h.Value);
                 }

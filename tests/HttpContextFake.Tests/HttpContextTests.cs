@@ -18,36 +18,36 @@ namespace HttpContextFake.Tests
         [Test]
         public void CanSetRequest()
         {
-            _sut.TheRequest = new HttpRequest();
-            Assert.That(_sut.Request, Is.EqualTo(_sut.TheRequest));
+            _sut.FakeRequest = new HttpRequest();
+            Assert.That(_sut.Request, Is.EqualTo(_sut.FakeRequest));
         }
 
         [Test]
         public void CanSetResponse()
         {
-            _sut.TheResponse = new HttpResponse();
-            Assert.That(_sut.Response, Is.EqualTo(_sut.TheResponse));
+            _sut.FakeResponse = new HttpResponse();
+            Assert.That(_sut.Response, Is.EqualTo(_sut.FakeResponse));
         }
 
         [Test]
         public void CanSetItems()
         {
-            _sut.TheItems.Add("hi", "there");
-            Assert.That(_sut.Items["hi"], Is.EqualTo("there"));
+            _sut.FakeItems.Add("hi", "Fakere");
+            Assert.That(_sut.Items["hi"], Is.EqualTo("Fakere"));
         }
 
         [Test]
         public void CanSetError()
         {
-            _sut.TheError = new Exception("abc");
-            Assert.That(_sut.Error, Is.EqualTo(_sut.TheError));
+            _sut.FakeError = new Exception("abc");
+            Assert.That(_sut.Error, Is.EqualTo(_sut.FakeError));
         }
 
         [Test]
         public void Cache_Works()
         {
-            _sut.TheCache = new Cache();
-            Assert.That(_sut.Cache, Is.EqualTo(_sut.TheCache));
+            _sut.FakeCache = new Cache();
+            Assert.That(_sut.Cache, Is.EqualTo(_sut.FakeCache));
         }
     }
 }
